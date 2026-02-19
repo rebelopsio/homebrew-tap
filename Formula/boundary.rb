@@ -1,25 +1,25 @@
 class Boundary < Formula
   desc "A static analysis tool for evaluating DDD and Hexagonal Architecture"
   homepage "https://github.com/rebelopsio/boundary"
-  version "0.8.5"
+  version "0.9.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rebelopsio/boundary/releases/download/v0.8.5/boundary-aarch64-apple-darwin.tar.xz"
-      sha256 "84df64ef423b88555e0ecb5f3719099c4654dbe327cadd9298f9847861d5463b"
+      url "https://github.com/rebelopsio/boundary/releases/download/v0.9.0/boundary-aarch64-apple-darwin.tar.xz"
+      sha256 "7898ea34b97de895d2e822c9ecc650b81afdff93b220e2f5cdd9cf6affe1cc49"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rebelopsio/boundary/releases/download/v0.8.5/boundary-x86_64-apple-darwin.tar.xz"
-      sha256 "9eb240ecd05f9a347700ea64ef4af4ad63debc7527c3360a5cef53c2d2607f70"
+      url "https://github.com/rebelopsio/boundary/releases/download/v0.9.0/boundary-x86_64-apple-darwin.tar.xz"
+      sha256 "3b430f82733b8079af9899ad9bd08131dbbf0d62dc346ddeef60aa14b29ed00e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rebelopsio/boundary/releases/download/v0.8.5/boundary-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "bbe23959c7cd4eeaabf5bebd1e2a756125ccca1d4f894ae2b89f5a3b838b83fb"
+      url "https://github.com/rebelopsio/boundary/releases/download/v0.9.0/boundary-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "df26a97c68003bd7344bbc1a4e0c273137cc1b1f13e5bb037ace576c3c37050a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rebelopsio/boundary/releases/download/v0.8.5/boundary-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b005428ed6f1446c8969664c51887206a23aa65f3eebd7ce8ce868ee2a00255e"
+      url "https://github.com/rebelopsio/boundary/releases/download/v0.9.0/boundary-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c8c34af340431be0405cd5cae31325967de5d70323c971def471eafa5e65cc85"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
