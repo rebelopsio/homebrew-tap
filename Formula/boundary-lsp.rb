@@ -1,25 +1,25 @@
 class BoundaryLsp < Formula
   desc "LSP server for boundary architecture analysis"
   homepage "https://github.com/rebelopsio/boundary"
-  version "0.22.1"
+  version "0.23.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rebelopsio/boundary/releases/download/v0.22.1/boundary-lsp-aarch64-apple-darwin.tar.xz"
-      sha256 "c4743720c750181dcf627e76eeae9009c394ddc0e19d643929dead09143acc34"
+      url "https://github.com/rebelopsio/boundary/releases/download/v0.23.0/boundary-lsp-aarch64-apple-darwin.tar.xz"
+      sha256 "683ad9af3eb313adce62c8adb914bf8bbf29917e1fe7bd03a39ed8ff9b9a6481"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rebelopsio/boundary/releases/download/v0.22.1/boundary-lsp-x86_64-apple-darwin.tar.xz"
-      sha256 "90c51e0579900e937e14c8668c8645bb74fe101d08ee10f818bbfdb199129354"
+      url "https://github.com/rebelopsio/boundary/releases/download/v0.23.0/boundary-lsp-x86_64-apple-darwin.tar.xz"
+      sha256 "da7fa9b8484471a394b2e96b495e790ba32d29867d9098b1d4316b57bf994f18"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rebelopsio/boundary/releases/download/v0.22.1/boundary-lsp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "de821fc8a55d7a185c39e7a9f5004c6a2238f0327f5bb24ab6d8168bf76bd798"
+      url "https://github.com/rebelopsio/boundary/releases/download/v0.23.0/boundary-lsp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f51f562b4e06e2a38395727cf014c7b617eeebe59017fe620adee40d2a90f459"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rebelopsio/boundary/releases/download/v0.22.1/boundary-lsp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "36cd16b708155c8c45b7dc7c4744f9b40aea4d86b874c64730a0cb2f1fa89cde"
+      url "https://github.com/rebelopsio/boundary/releases/download/v0.23.0/boundary-lsp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5224ddd28686567de33934da7ac5f47586e11d3574e9743e00c472e95826ef74"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
